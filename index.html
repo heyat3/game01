@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Game 01</title>
+    <style>
+        * {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canv"></canvas>
+    <!-- Engine-specific Code -->
+    <script src="./engine/Vector2.js"></script>
+    <script src="./engine/Scene.js"></script>
+    <script src="./engine/GameObject.js"></script>
+    <script src="./engine/Component.js"></script>
+    <script src="./engine/Input.js"></script>
+    <script src="./engine/Engine.js"></script>
+    <script src="./engine/Time.js"></script>
+    <script src="./engine/Collisions.js"></script>
+    <script src="./engine/CameraGameObject.js"></script>
+    <script src="./engine/SceneManager.js"></script>
+
+    <script src="./engine/components/Transform.js"></script>
+    <script src="./engine/components/Polygon.js"></script>
+    <script src="./engine/components/RigidBody.js"></script>
+    <script src="./engine/components/Collider.js"></script>
+    <script src="./engine/components/Text.js"></script>
+    <script src="./engine/components/Camera.js"></script>
+    <script src="./engine/components/BehaviorTree.js"></script>
+
+    <!-- Game-specific Code -->
+    <script src="./game/scenes/StartScene.js"></script>
+    <script src="./game/scenes/MainScene.js"></script>
+    <script src="./game/scenes/EarthRoomScene.js"></script>
+    <script src="./game/scenes/IceRoomScene.js"></script>
+    <script src="./game/scenes/FireRoomScene.js"></script>
+    <script src="./game/scenes/WindRoomScene.js"></script>
+    <script src="./game/scenes/TrialRoomScene.js"></script>
+    <script src="./game/scenes/GameOverScene.js"></script>
+    <script src="./game/scenes/WinScene.js"></script>
+
+    <script src="./game/prefabs/PlayerGameObject.js"></script>
+    <script src="./game/prefabs/EnemyGameObject.js"></script>
+    <script src="./game/prefabs/WallGameObject.js"></script>
+    <script src="./game/prefabs/ElementsGameObject.js"></script>
+    <script src="./game/prefabs/PlayerLaserGameObject.js"></script>
+    <script src="./game/prefabs/MainControllerGameObject.js"></script>
+    <script src="./game/prefabs/TrialControllerGameObject.js"></script>
+    <script src="./game/prefabs/EarthRoomControllerGameObject.js"></script>
+    <script src="./game/prefabs/MenuControllerGameObject.js"></script>
+    <script src="./game/prefabs/ObstacleGameObject.js"></script>
+    <script src="./game/prefabs/RoomControllerGameObject.js"></script>
+
+    <script src="./game/prefabs/UI/TimerGameObject.js"></script>
+    <script src="./game/prefabs/UI/HealthTextGameObject.js"></script>
+    <script src="./game/prefabs/UI/ElementMenuGameObject.js"></script>
+    <script src="./game/prefabs/UI/ElementsFoundTextGameObject.js"></script>
+
+    <script src="./game/prefabs/riddles/InputGameObject.js"></script>
+    <script src="./game/prefabs/riddles/RiddleChestGameObject.js"></script>
+    <script src="./game/prefabs/riddles/RiddleOutputGameObject.js"></script>
+
+
+    <script src="./game/components/PlayerController.js"></script>
+    <script src="./game/components/EnemyController.js"></script>
+    <script src="./game/components/ElementsController.js"></script>
+    <script src="./game/components/PlayerLaserController.js"></script>
+    <script src="./game/components/StartSceneController.js"></script>
+    <script src="./game/components/ButtonController.js"></script>
+    <script src="./game/components/MainController.js"></script>
+    <script src="./game/components/TrialController.js"></script>
+    <script src="./game/components/EarthRoomController.js"></script>
+    <script src="./game/components/MenuController.js"></script>
+    <script src="./game/components/ObstacleController.js"></script>
+    <script src="./game/components/RoomController.js"></script>
+
+    <script src="./game/components/UI/TimerTextController.js"></script>
+    <script src="./game/components/UI/HealthTextController.js"></script>
+    <script src="./game/components/UI/ElementMenuController.js"></script>
+    <script src="./game/components/UI/ElementsFoundTextController.js"></script>
+
+    <script src="./game/components/riddles/InputController.js"></script>
+    <script src="./game/components/riddles/RiddleChestController.js"></script>
+    <script src="./game/components/riddles/RiddleOutputController.js"></script>
+
+    <script src="./game/GameProperties.js"></script>
+    <script src="./game/GameAssets.js"></script>
+    <script src="./game/GameGlobals.js"></script>
+ 
+    <script>
+        SceneManager.loadScene(new StartScene())
+        Engine.start(new GameProperties())
+
+        
+        // Goals:
+        //    element popup (done)
+        //    element powers (maybe)
+        //    picking up items (maybe)
+        //    finishing scenes (done)
+        //    enemy behaviors (done)
+        //    attack aiming (done)
+        //    locked rooms (done)
+        //    question popups (done)
+
+    </script>
+</body>
